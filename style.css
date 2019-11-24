@@ -1,0 +1,174 @@
+html {
+  overflow-y: scroll;
+}
+body {
+  display: grid;
+  justify-content: space-evenly;
+  margin: 100px 0;
+}
+.grid {
+  position: relative;
+  width: 110px;
+  background: #ccc;
+  border: 2px solid blue;
+  min-height: 100px;
+  display: grid;
+  margin: 10px 10px 10px 10px;
+}
+nav {
+  position: absolute;
+  top: -95px;
+  left: -5px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav button {
+  display: block;
+  position: relative;
+  height: 50px;
+  margin: 10px 10px 10px 0px;
+}
+nav select {
+  display: block;
+  position: relative;
+  height: 50px;
+  margin: 10px 10px 10px 0px;
+}
+nav input {
+  display: block;
+  position: relative;
+  height: 50px;
+  margin: 10px 10px 10px 0px;
+}
+.item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: 5px;
+  z-index: 1;
+}
+.item.h1 {
+  height: 50px;
+  line-height: 50px;
+}
+.item.h2 {
+  height: 110px;
+  line-height: 110px;
+}
+.item.w1 {
+  width: 50px;
+}
+.item.w2 {
+  width: 110px;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: red;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+.grid-1 {
+  grid-column: 1;
+  grid-row: 1
+}
+.grid-1 .item-content {
+  background: orange;
+}
+.grid-2 {
+  grid-column: 2;
+  grid-row: 1
+}
+.grid-2 .item-content {
+  background: green;
+}
+.grid-3 {
+  grid-column: 3;
+  grid-row: 1
+}
+.grid-3 .item-content {
+  background: blue;
+}
+.grid-4 {
+  grid-column: 4;
+  grid-row: 1
+}
+.grid-4 .item-content {
+  background: purple;
+}
+  .grid-5 {
+  grid-column: 1;
+  grid-row: 2
+}
+.grid-5 .item-content {
+  background: green;
+}
+.grid-6 {
+  grid-column: 2;
+  grid-row: 2
+}
+.grid-6 .item-content {
+  background: blue;
+}
+.grid-7 {
+  grid-column: 3;
+  grid-row: 2
+}
+
+.grid-7 .item-content {
+  background: purple;
+}
+.grid-8 {
+  grid-column: 4;
+  grid-row: 2
+}
+.grid-8 .item-content {
+  background: orange;
+}
+.grid-9 {
+  grid-column: 1;
+  grid-row: 3
+}
+.grid-9 .item-content {
+  background: blue;
+}
+.grid-10 {
+  grid-column: 2;
+  grid-row: 3
+}
+.grid-10 .item-content {
+  background: purple;
+}
+.grid-11 {
+  grid-column: 3;
+  grid-row: 3
+}
+.grid-11 .item-content {
+  background: orange;
+}
+.grid-12 {
+  grid-column: 4;
+  grid-row: 3;
+  border: 2px solid red;
+}
+.grid-12 .item-content {
+  background: red;
+}
+.item.muuri-item-dragging .item-content,
+.item.muuri-item-releasing .item-content {
+  background: yellow;
+}
