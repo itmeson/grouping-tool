@@ -15,3 +15,7 @@ Usage:
 Uses the muuri package to handle draggable grid boxes.
 
 Also available on repl.it, https://repl.it/@MarkBetnel/Groups
+
+![Sample screen in use](images/sample_screen.png)
+
+
