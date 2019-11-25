@@ -8,7 +8,7 @@ body {
 }
 .grid {
   position: relative;
-  width: 110px;
+  width: 160px;
   background: #ccc;
   border: 2px solid blue;
   min-height: 100px;
@@ -38,12 +38,12 @@ nav select {
 nav input {
   display: block;
   position: relative;
-  height: 50px;
+  height: 45px;
   margin: 10px 10px 10px 0px;
 }
 .item {
   position: absolute;
-  width: 100px;
+  width: 150px;
   height: 100px;
   line-height: 100px;
   margin: 5px;
