@@ -119,6 +119,7 @@ function getAllGrids(item) {
   getNewListOfNames(selectFile); // to get the default
   var storeGrouping = document.querySelector('.store');
   var loadGrouping = document.querySelector('.load');
+  var coldCallButton = document.querySelector('.coldcall');
 
   grid1ClearButton.addEventListener('click', function() {
     clearItemsAllGrids(grids);
@@ -136,6 +137,10 @@ function getAllGrids(item) {
   storeGrouping.addEventListener('click', function() {
     saveCurrentLayout(grids);
   });
+
+  coldCallButton.addEventListener('click', function() {
+    coldCall(grids);
+  })
 
   loadGrouping.addEventListener('click', function() {
     var pickFile = document.createElement('input');
@@ -237,6 +242,22 @@ function getAllGrids(item) {
       a.download = fileName;
       a.click();
   }
+  function coldCall(grids) {
+    console.log(grids);
+    const nameElements = Array.from(document.querySelectorAll('.item-content'));
 
+    const randomIndex = Math.floor(Math.random() * nameElements.length);
+    const selectedStudent = nameElements[randomIndex];
+    // Step 3: Change the style of the selected student's display name
+    //const studentElement = document.getElementById(selectedStudent.id);
+    selectedStudent.style.fontSize = '4em';
+    selectedStudent.style.color = 'red';
+
+    // Step 4: Optionally, reset the style after a certain period (e.g., 5 seconds)
+    setTimeout(() => {
+      selectedStudent.style.fontSize = '';
+      selectedStudent.style.color = '';
+    }, 5000);
+  }
 
 })();
