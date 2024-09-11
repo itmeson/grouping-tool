@@ -104,64 +104,64 @@ nav input {
   background: blue;
 }
 .grid-4 {
-  grid-column: 4;
-  grid-row: 1
+  grid-column: 1;
+  grid-row: 2
 }
 .grid-4 .item-content {
   background: purple;
 }
   .grid-5 {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2
 }
 .grid-5 .item-content {
-  background: green;
+  background: orange;
 }
 .grid-6 {
-  grid-column: 2;
-  grid-row: 2
-}
-.grid-6 .item-content {
-  background: blue;
-}
-.grid-7 {
   grid-column: 3;
   grid-row: 2
 }
-
-.grid-7 .item-content {
-  background: purple;
+.grid-6 .item-content {
+  background: green;
 }
-.grid-8 {
-  grid-column: 4;
-  grid-row: 2
-}
-.grid-8 .item-content {
-  background: orange;
-}
-.grid-9 {
+.grid-7 {
   grid-column: 1;
   grid-row: 3
 }
-.grid-9 .item-content {
+
+.grid-7 .item-content {
   background: blue;
 }
-.grid-10 {
+.grid-8 {
   grid-column: 2;
   grid-row: 3
+}
+.grid-8 .item-content {
+  background: purple;
+}
+.grid-9 {
+  grid-column: 3;
+  grid-row: 3
+}
+.grid-9 .item-content {
+  background: orange;
+}
+.grid-10 {
+  grid-column: 1;
+  grid-row: 4
 }
 .grid-10 .item-content {
   background: purple;
 }
 .grid-11 {
-  grid-column: 3;
-  grid-row: 3
+  grid-column: 2;
+  grid-row: 4
 }
 .grid-11 .item-content {
   background: orange;
 }
 .grid-12 {
-  grid-column: 4;
+  grid-column: 3;
   grid-row: 3;
   border: 2px solid red;
 }

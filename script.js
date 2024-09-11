@@ -25,7 +25,7 @@ function shuffleArray(array) {
 
 function getAllGrids(item) {
   return [grid1, grid2, grid3, grid4, grid5, grid6,
-      grid7, grid8, grid9, grid10, grid11, grid12];
+      grid7, grid8, grid12];
 }
 
 
@@ -85,7 +85,7 @@ function getAllGrids(item) {
     dragContainer: document.body,
     dragSort: getAllGrids
   });
-  var grid9 = new Muuri('.grid-9', {
+/*  var grid9 = new Muuri('.grid-9', {
     items: '.item',
     dragEnabled: true,
     dragContainer: document.body,
@@ -102,7 +102,7 @@ function getAllGrids(item) {
     dragEnabled: true,
     dragContainer: document.body,
     dragSort: getAllGrids
-  });
+  });*/
   var grid12 = new Muuri('.grid-12', {
     items: '.item',
     dragEnabled: true,
